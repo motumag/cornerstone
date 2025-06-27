@@ -328,7 +328,7 @@ const Footer = () => {
             <FooterTitle theme={{ colors }}>Contact Info</FooterTitle>
             <ContactInfo theme={{ colors }}>
               <p>📧 info@cornerstone-solar.com</p>
-              <p>📞 +1 (555) 123-4567</p>
+              <p>📞 +1 (301) 704‑8571</p>
               <p>
                 📍 123 Solar Street
                 <br />

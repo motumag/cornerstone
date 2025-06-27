@@ -132,9 +132,17 @@ const ContactGrid = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
 
+  @media (max-width: 1024px) {
+    gap: 3rem;
+  }
+
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 2rem;
   }
 `;
 
@@ -162,6 +170,15 @@ const ContactForm = styled.form`
   &:hover {
     transform: translateY(-5px);
     box-shadow: ${(props) => (props.theme.isDarkMode ? "0 35px 70px rgba(139, 92, 246, 0.2)" : "0 35px 70px rgba(59, 130, 246, 0.15)")};
+  }
+
+  @media (max-width: 768px) {
+    padding: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem;
+    border-radius: 20px;
   }
 `;
 
@@ -398,14 +415,14 @@ const Contact = () => {
     {
       icon: <FaEnvelope />,
       title: "Email Us",
-      detail: "info@cornerstone-solar.com\nsales@cornerstone-solar.com",
+      detail: "info@cornerstone-solar.com\n+1 (301) 704‑8571",
       gradient: "linear-gradient(135deg, #8b5cf6, #7c3aed)",
       delay: 0,
     },
     {
       icon: <FaPhone />,
       title: "Call Us",
-      detail: "+1 (555) 123-4567\n+1 (555) 987-6543",
+      detail: "+1 (301) 704‑8571\n+251 90 456 7428",
       gradient: "linear-gradient(135deg, #f59e0b, #d97706)",
       delay: 0.2,
     },

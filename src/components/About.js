@@ -80,9 +80,20 @@ const AboutGrid = styled.div`
   align-items: center;
   margin-bottom: 6rem;
 
+  @media (max-width: 1024px) {
+    gap: 3rem;
+    margin-bottom: 5rem;
+  }
+
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 2rem;
+    margin-bottom: 3rem;
   }
 `;
 
@@ -159,6 +170,20 @@ const StatsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  @media (max-width: 320px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const StatCard = styled.div`

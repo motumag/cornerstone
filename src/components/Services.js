@@ -60,8 +60,17 @@ const SectionTitle = styled.h2`
   -webkit-text-fill-color: transparent;
   background-clip: text;
 
+  @media (max-width: 1024px) {
+    font-size: 2.5rem;
+  }
+
   @media (max-width: 768px) {
     font-size: 2.2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
   }
 `;
 
@@ -78,9 +87,18 @@ const ServicesGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 3rem;
 
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 1.5rem;
   }
 `;
 

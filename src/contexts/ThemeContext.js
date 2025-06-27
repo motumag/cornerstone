@@ -60,9 +60,8 @@ export const ThemeProvider = ({ children }) => {
     if (savedTheme) {
       setIsDarkMode(savedTheme === "dark");
     } else {
-      // Check user's system preference
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setIsDarkMode(prefersDark);
+      // Set light theme as default
+      setIsDarkMode(false);
     }
     setIsInitialized(true);
   }, []);

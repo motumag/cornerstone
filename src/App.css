@@ -457,10 +457,25 @@ html {
   }
 }
 
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  h1 { font-size: 2.8rem; }
+  h2 { font-size: 2.2rem; }
+  h3 { font-size: 1.8rem; }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
   }
+  
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.6rem; }
+  h4 { font-size: 1.4rem; }
   
   /* Reduce animation intensity on mobile */
   .fade-in-up,
@@ -473,6 +488,56 @@ html {
   .bounce,
   .pulse {
     animation-duration: 1.5s;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  h1 { 
+    font-size: 2.2rem; 
+    line-height: 1.2;
+  }
+  h2 { 
+    font-size: 1.8rem; 
+    line-height: 1.3;
+  }
+  h3 { 
+    font-size: 1.5rem; 
+    line-height: 1.3;
+  }
+  h4 { font-size: 1.3rem; }
+  h5 { font-size: 1.1rem; }
+  
+  p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  button {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 0.8rem;
+  }
+  
+  h1 { font-size: 1.9rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.3rem; }
+  
+  button {
+    font-size: 0.85rem;
+    padding: 0.7rem 1.2rem;
   }
 }
 

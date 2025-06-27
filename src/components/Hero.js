@@ -159,10 +159,21 @@ const HeroContent = styled.div`
   position: relative;
   z-index: 1;
 
+  @media (max-width: 1024px) {
+    gap: 3rem;
+    padding: 0 4%;
+  }
+
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+    padding: 0 6%;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 5%;
+    gap: 1.5rem;
   }
 `;
 
@@ -201,8 +212,22 @@ const HeroTitle = styled.h1`
   background-clip: text;
   filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.5));
 
+  @media (max-width: 1024px) {
+    font-size: 3.5rem;
+  }
+
   @media (max-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 1.8rem;
   }
 `;
 
@@ -222,6 +247,11 @@ const CTAButtons = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: stretch;
+    gap: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 0.8rem;
   }
 `;
 
